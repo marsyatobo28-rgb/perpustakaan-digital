@@ -26,7 +26,7 @@ export default async function Navbar() {
   const menu = MENU[role] ?? MENU.tamu;
 
   return (
-    <header className="border-b border-slate-200 bg-white">
+    <header className="border-b border-slate-200 bg-white print:hidden">
       <nav className="mx-auto flex max-w-6xl flex-wrap items-center gap-x-8 gap-y-3 px-4 py-4">
         <Link
           href="/"

@@ -4,3 +4,17 @@ body {
   background-color: #f8fafc;
   color: #0f172a;
 }
+
+/* Saat dicetak: latar putih dan warna grafik tetap ikut tercetak */
+@media print {
+  @page {
+    margin: 14mm;
+  }
+  body {
+    background-color: #ffffff;
+  }
+  * {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+}
